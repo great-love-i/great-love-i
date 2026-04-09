@@ -10,7 +10,7 @@
   <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking">
   <meta property="og:description" content="First-semester Cybersecurity student focused on C++, Python, networking fundamentals, and CTF challenges.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sumit Sharma — Cybersecurity & Networking">
 
   <!-- Fonts: preconnect first, then stylesheet -->
@@ -26,12 +26,6 @@
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/main.css">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking">
-  <meta property="og:description" content="Portfolio of Sumit Sharma, a 1st Semester Cybersecurity student at Lincoln International College, Kathmandu.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-
   <!-- Noscript fallback: keep reveal elements visible if JS is disabled -->
   <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1;transform:none;}</style></noscript>
 
@@ -39,6 +33,8 @@
   <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
+  <!-- Global Atmosphere -->
+  <div class="noise-overlay"></div>
 
   <!-- Navigation Bar -->
   <nav id="nav" class="nav">
@@ -47,7 +43,10 @@
       
       <div class="nav__links">
         <a href="#about" class="nav__link">About</a>
+        <a href="#education" class="nav__link">Education</a>
         <a href="#stack" class="nav__link">Stack</a>
+        <a href="#operations" class="nav__link">Operations</a>
+        <a href="#matrix" class="nav__link">Matrix</a>
         <a href="#projects" class="nav__link">Projects</a>
         <a href="#contact" class="nav__link">Contact</a>
       </div>
@@ -79,7 +78,10 @@
   <!-- Mobile Sidebar Menu -->
   <div id="mobile-menu" class="nav__mobile-menu">
     <a href="#about" class="nav__mobile-link">ABOUT</a>
+    <a href="#education" class="nav__mobile-link">EDUCATION</a>
     <a href="#stack" class="nav__mobile-link">STACK</a>
+    <a href="#operations" class="nav__mobile-link">OPERATIONS</a>
+    <a href="#matrix" class="nav__mobile-link">MATRIX</a>
     <a href="#projects" class="nav__mobile-link">PROJECTS</a>
     <a href="#contact" class="nav__mobile-link">CONTACT</a>
     
@@ -103,15 +105,22 @@
     <section id="home" class="hero container relative">
       <div class="hero__grid-lines"></div>
       
-      <!-- Abstract SVG Accent -->
-      <div class="hero__accent-block" aria-hidden="true" style="top:2rem; right:2rem; opacity:0.1; width:clamp(120px, 30vw, 300px); background: transparent;">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="100" height="100" fill="var(--color-accent)"/>
-          <circle cx="50" cy="50" r="40" fill="var(--color-bg)"/>
-          <rect x="45" y="0" width="10" height="100" fill="var(--color-accent)"/>
-          <rect x="0" y="45" width="100" height="10" fill="var(--color-accent)"/>
-        </svg>
+      <!-- Data Traffic Background (Multi-layer) -->
+      <div class="data-traffic layer-1" aria-hidden="true">
+        <div class="data-column">0101101011010110</div>
+        <div class="data-column">FF A3 01 CC D2 44</div>
       </div>
+      <div class="data-traffic layer-2" aria-hidden="true">
+        <div class="data-column">1001010100110011</div>
+        <div class="data-column">0xDEADBEEF 0x00</div>
+        <div class="data-column">88 99 AA BB CC DD</div>
+      </div>
+      <div class="data-traffic layer-3" aria-hidden="true">
+        <div class="data-column">NET_SCAN_INIT</div>
+        <div class="data-column">TRACE_ROUTE_v6</div>
+        <div class="data-column">ACK_SYN_RST_FIN</div>
+      </div>
+
 
       <div class="hero__content section-pad">
         <div class="hero__split">
@@ -122,14 +131,16 @@
               <span class="label">Cybersecurity Student // Nepal</span>
             </div>
             
-            <h1 class="hero__name">
+            <h1 class="hero__name glitch-hover">
               <span class="first text-accent swiss-cross">SUMIT</span>
               <span class="last">SHARMA</span>
             </h1>
             
             <div class="hero__meta">
               <p class="hero__tagline">
-                I'm a first-semester Cybersecurity & Networking student focused on mastering <strong>core concepts</strong>, building <strong>robust systems</strong>, and solving <strong>CTF challenges</strong>.
+              <p class="hero__tagline">
+                Cybersecurity & Networking student focused on designing secure architectures and mastering the intersection of <strong>low-level systems</strong> and <strong>network protocols</strong>.
+              </p>
               </p>
               <div class="hero__actions">
                 <a href="#about" class="btn btn-primary">Discover More</a>
@@ -139,29 +150,105 @@
           </div>
 
           <div class="hero__visual" aria-hidden="true">
-            <div style="border: var(--border-thick); width: 100%; aspect-ratio: 1;">
-              <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="background:var(--color-bg);">
-                <path d="M0 100h400M0 200h400M0 300h400M100 0v400M200 0v400M300 0v400" stroke="var(--color-border)" stroke-width="2" opacity="0.1"/>
-                <path d="M50 400 L150 250 L250 250 L350 400 Z" fill="var(--color-fg)"/>
-                <path d="M200 250 L200 400" stroke="var(--color-bg)" stroke-width="4"/>
-                <path d="M150 250 L200 350 L250 250" stroke="var(--color-bg)" stroke-width="4" fill="none"/>
-                <rect x="180" y="220" width="40" height="40" fill="var(--color-fg)"/>
-                <rect x="120" y="80" width="160" height="150" rx="10" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-surface)"/>
-                <path d="M200 80 L200 230" stroke="var(--color-fg)" stroke-width="4"/>
-                <path d="M110 90 L160 40 L280 40 L290 90" fill="var(--color-fg)"/>
-                <circle cx="160" cy="150" r="30" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-bg)"/>
-                <circle cx="240" cy="150" r="30" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-bg)"/>
-                <line x1="190" y1="150" x2="210" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
-                <line x1="120" y1="150" x2="130" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
-                <line x1="270" y1="150" x2="280" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
-                <circle cx="160" cy="150" r="8" fill="var(--color-fg)"/>
-                <circle cx="240" cy="150" r="8" fill="var(--color-fg)"/>
-                <path d="M200 150 L200 185 L180 185" stroke="var(--color-fg)" stroke-width="4" fill="none"/>
-                <line x1="180" y1="205" x2="220" y2="205" stroke="var(--color-fg)" stroke-width="6"/>
-                <circle cx="260" cy="190" r="6" fill="var(--color-accent)"/>
-                <path d="M260 190 L260 210 L320 210" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
-                <rect x="0" y="0" width="20" height="20" fill="var(--color-fg)"/>
-                <rect x="380" y="380" width="20" height="20" fill="var(--color-accent)"/>
+            <div style="border: var(--border-thick); width: 100%; aspect-ratio: 1; position: relative; background: var(--color-bg); overflow: hidden; box-shadow: var(--shadow-lg);">
+              
+              <!-- Subtle inner borders for Swiss technical feel -->
+              <div style="position: absolute; top:8px; left:8px; right:8px; bottom:8px; border: 1px solid var(--color-border); opacity: 0.2; pointer-events: none; z-index: 10;"></div>
+              
+              <!-- Swiss corner decorators -->
+              <div style="position: absolute; top:0; left:0; width:16px; height:16px; border-right: 2px solid var(--color-accent); border-bottom: 2px solid var(--color-accent); z-index: 10;"></div>
+              <div style="position: absolute; bottom:0; right:0; width:16px; height:16px; border-left: 2px solid var(--color-accent); border-top: 2px solid var(--color-accent); z-index: 10;"></div>
+
+              <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                <defs>
+                  <!-- Rotating Scanner Animation -->
+                  <style>
+                    @keyframes rotate-scanner {
+                      from { transform: rotate(0deg); }
+                      to { transform: rotate(360deg); }
+                    }
+                    .scanner-arm { 
+                      transform-origin: 200px 200px;
+                      animation: rotate-scanner 6s linear infinite; 
+                    }
+                    
+                    @keyframes node-ping {
+                      0%, 100% { opacity: 0.3; transform: scale(0.9); }
+                      50% { opacity: 1; transform: scale(1.1); }
+                    }
+                    .radar-node { 
+                      transform-origin: center;
+                      animation: node-ping 2.5s ease-in-out infinite; 
+                    }
+                    
+                    .radar-grid { stroke: var(--color-border); opacity: 0.15; }
+                    .radar-accent { stroke: var(--color-accent); opacity: 0.4; }
+                  </style>
+
+                  <!-- Scanner sweep gradient -->
+                  <radialGradient id="scanner-glow" cx="200" cy="200" r="200" gradientUnits="userSpaceOnUse">
+                    <stop offset="90%" stop-color="var(--color-accent)" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0.3"/>
+                  </radialGradient>
+                  
+                  <linearGradient id="arm-tail" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0.6"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Concentric Grid -->
+                <circle cx="200" cy="200" r="40" fill="none" class="radar-grid" stroke-width="1"/>
+                <circle cx="200" cy="200" r="80" fill="none" class="radar-grid" stroke-width="1"/>
+                <circle cx="200" cy="200" r="120" fill="none" class="radar-grid" stroke-width="1"/>
+                <circle cx="200" cy="200" r="160" fill="none" class="radar-grid" stroke-width="1"/>
+                <circle cx="200" cy="200" r="198" fill="none" class="radar-accent" stroke-width="2"/>
+                
+                <!-- Cross Axis -->
+                <line x1="200" y1="0" x2="200" y2="400" class="radar-grid" stroke-dasharray="4 4"/>
+                <line x1="0" y1="200" x2="400" y2="200" class="radar-grid" stroke-dasharray="4 4"/>
+
+                <!-- Nodes -->
+                <g transform="translate(200, 200)">
+                  <!-- Python NODE -->
+                  <g transform="translate(-110, -90)" class="radar-node" style="animation-delay: 0.2s;">
+                    <circle r="4" fill="var(--color-accent)"/>
+                    <text x="10" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9" font-weight="bold">PY_ENV</text>
+                  </g>
+                  
+                  <!-- C++ NODE -->
+                  <g transform="translate(130, -50)" class="radar-node" style="animation-delay: 0.8s;">
+                    <polygon points="0,-6 6,6 -6,6" fill="var(--color-fg)"/>
+                    <text x="-60" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9">CPP_CORE</text>
+                  </g>
+                  
+                  <!-- Linux NODE -->
+                  <g transform="translate(-70, 120)" class="radar-node" style="animation-delay: 1.5s;">
+                    <rect x="-4" y="-4" width="8" height="8" fill="var(--color-fg)"/>
+                    <text x="10" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9">LNX_SYS</text>
+                  </g>
+                  
+                  <!-- Git NODE -->
+                  <g transform="translate(100, 100)" class="radar-node" style="animation-delay: 2.1s;">
+                    <circle r="4" fill="var(--color-accent)"/>
+                    <text x="-55" y="4" fill="var(--color-accent)" font-family="monospace" font-size="9">GIT_VER</text>
+                  </g>
+                </g>
+
+                <!-- Rotating Scanner -->
+                <g class="scanner-arm">
+                  <path d="M 200 200 L 200 0 A 200 200 0 0 1 341 58 Z" fill="url(#arm-tail)" opacity="0.2"/>
+                  <line x1="200" y1="200" x2="200" y2="0" stroke="var(--color-accent)" stroke-width="2"/>
+                </g>
+
+                <!-- Meta Overlays -->
+                <text x="16" y="24" fill="var(--color-accent)" font-family="monospace" font-size="10" font-weight="bold">> SCANNER_v2.01</text>
+                <text x="16" y="380" fill="var(--color-muted)" font-family="monospace" font-size="10">SCANNING_ACTIVE...</text>
+                
+                <g transform="translate(340, 365)">
+                   <rect width="44" height="18" fill="var(--color-accent)"/>
+                   <text x="6" y="13" fill="var(--color-bg)" font-family="monospace" font-size="9" font-weight="bold">LIVE</text>
+                </g>
               </svg>
             </div>
           </div>
@@ -180,7 +267,7 @@
             <h2 class="section-title">SYSTEM<br><span class="text-accent text-light">IDENTITY</span></h2>
             
             <p class="text-md mt-6">
-              Currently pursuing a BSc. (Hons) in Cyber Security & Networking Technology at Lincoln International College, Kathmandu. Building foundations in low-level programming and ethical hacking.
+              Currently exploring the depths of cybersecurity through a blend of rigorous academic study and independent offensive research. I am dedicated to understanding how complex systems fail—and how to make them resilient.
             </p>
 
             <div class="about__stats">
@@ -195,7 +282,7 @@
             </div>
             
             <p class="text-md mt-6">
-              Establish secure architectures and master offensive/defensive methodologies. Focusing on lower-level systems and protocol complexity.
+              My core directive is to evolve into a versatile security professional capable of designing high-integrity infrastructures that withstand modern threat vectors.
             </p>
           </div>
 
@@ -219,11 +306,36 @@
             
             <p class="mt-8 font-mono text-sm text-muted">
               > Root access granted.<br>
-              > Parsing professional objectives...<br>
-              > Goal: Establish secure architectures and master offensive/defensive methodologies.
+              > Parsing professional directives...<br>
+              > Status: Actively exploring architectural vulnerabilities and network defense.
             </p>
           </div>
           
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container section-pad">
+        <div class="reveal">
+          <span class="section-number">02</span>
+          <h2 class="section-title">ACADEMIC<br><span class="text-accent text-light">BACKGROUND</span></h2>
+        </div>
+        
+        <div class="mt-12 grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: var(--space-6);">
+          <div class="card card-surface reveal delay-1" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Institution</div>
+            <div class="text-lg font-bold">Lincoln International College</div>
+          </div>
+          <div class="card card-surface reveal delay-2" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Program</div>
+            <div class="text-lg font-bold">BSc. (Hons) Cyber Security & Networking Technology</div>
+          </div>
+          <div class="card card-surface reveal delay-3" style="display: flex; flex-direction: column; justify-content: center; border-left: 4px solid var(--color-accent);">
+            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Career Goal</div>
+            <div class="text-lg font-bold text-accent">Cybersecurity Professional</div>
+          </div>
         </div>
       </div>
     </section>
@@ -233,7 +345,7 @@
       <div class="container section-pad">
         <div class="stack__header reveal">
           <div>
-            <span class="section-number">02</span>
+            <span class="section-number">03</span>
             <h2 class="section-title">CORE<br>STACK</h2>
           </div>
           <p class="text-md text-muted" style="max-width: 400px;">
@@ -324,134 +436,132 @@
       </div>
     </section>
 
-    <!-- Learning Progress Section -->
-    <section class="learning">
+    <!-- Active Operations Section -->
+    <section id="operations" class="learning">
       <div class="container section-pad">
         <div class="learning__layout">
           
-          <div class="learning__skills reveal-left">
-            <span class="section-number">03</span>
-            <h2 class="section-title">CURRENT<br>FOCUS</h2>
-            <div class="rule-accent"></div>
+          <div class="reveal-left">
+            <span class="section-number">04</span>
+            <h2 class="section-title">ACTIVE<br><span class="text-accent text-light">OPERATIONS</span></h2>
             
-            <p class="mb-8">
-              My current academic and independent learning objectives, mapped to measurable progress in core technical domains.
+            <p class="text-md mt-6 text-muted">
+              My current academic and independent learning directives. I am prioritizing structural mastery of systems before advancing to complex penetration testing workflows.
             </p>
 
-            <div class="skill-bar">
-              <div class="skill-bar__header">
-                <span class="skill-bar__name">C++ / Python / C</span>
-                <span class="skill-bar__pct" data-count="60" data-suffix="%">0</span>
-              </div>
-              <div class="skill-bar__track">
-                <div class="skill-bar__fill" style="--target-width: 60%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar mt-6">
-              <div class="skill-bar__header">
-                <span class="skill-bar__name">Networking (TCP/IP, DNS)</span>
-                <span class="skill-bar__pct" data-count="45" data-suffix="%">0</span>
-              </div>
-              <div class="skill-bar__track">
-                <div class="skill-bar__fill" style="--target-width: 45%;"></div>
-              </div>
-            </div>
-
-            <div class="skill-bar mt-6">
-              <div class="skill-bar__header">
-                <span class="skill-bar__name">Linux Environment</span>
-                <span class="skill-bar__pct text-accent" data-count="75" data-suffix="%">0</span>
-              </div>
-              <div class="skill-bar__track">
-                <div class="skill-bar__fill accent" style="--target-width: 75%;"></div>
-              </div>
-            </div>
-            
-             <div class="skill-bar mt-6">
-              <div class="skill-bar__header">
-                <span class="skill-bar__name">CTF Challenges / Hacking</span>
-                <span class="skill-bar__pct" data-count="30" data-suffix="%">0</span>
-              </div>
-              <div class="skill-bar__track">
-                <div class="skill-bar__fill" style="--target-width: 30%;"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="learning__info reveal-right text-md">
-            <ol class="numbered-list">
-              <li class="numbered-list__item">
-                <span class="numbered-list__num">01.</span>
-                <div class="numbered-list__text">
-                  <strong>Coursework Application</strong><br>
-                  Building robust CLI tools and mastering memory management concepts in C and C++.
+            <div class="mt-8 flex flex-col gap-4">
+              <!-- Operation 1 -->
+              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+                <div class="text-accent mt-1">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                 </div>
-              </li>
-              <li class="numbered-list__item">
-                <span class="numbered-list__num">02.</span>
-                <div class="numbered-list__text">
-                  <strong>Protocol Analysis</strong><br>
-                  Deep dive into fundamental networking protocols (HTTP, TCP/IP) and subnetting structures via packet inspection.
+                <div>
+                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Networking Fundamentals</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Analyzing networking technology architectures and implementing rigorous security protocols.</p>
                 </div>
-              </li>
-              <li class="numbered-list__item">
-                <span class="numbered-list__num">03.</span>
-                <div class="numbered-list__text">
-                  <strong>Offensive Security</strong><br>
-                  Engaging with entry-level CTF challenges to understand vulnerability exploitation and patching workflows.
+              </div>
+
+              <!-- Operation 2 -->
+              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+                <div class="text-accent mt-1">
+                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg>
                 </div>
-              </li>
-            </ol>
-            
-            <!-- EKG / Network Pulse SVG -->
-            <div class="mt-8 relative" style="width: 100%; height: 120px; overflow: hidden; border: var(--border-thin);">
-              <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%;">
-                <path d="M-20 60 L80 60 L100 20 L150 100 L180 60 L420 60" fill="none" stroke="var(--color-accent)" stroke-width="3"/>
-                <circle cx="100" cy="20" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
-                <circle cx="150" cy="100" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
-                <circle cx="180" cy="60" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
-              </svg>
+                <div>
+                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Programming Concepts</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Fulfilling course requirements by mastering Python, C++, and low-level Assembly (NASM).</p>
+                </div>
+              </div>
+
+              <!-- Operation 3 -->
+              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+                <div class="text-accent mt-1">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Offensive Foundations</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Engaging with entry-level CTFs to understand vulnerability exploitation workflows.</p>
+                </div>
+              </div>
             </div>
           </div>
 
+          <div class="reveal-right flex flex-col justify-center">
+            <div class="noise-overlay"></div>
+            <!-- Systems Monitor Panel -->
+            <div class="terminal" style="border: var(--border-thick); padding: var(--space-6); background: var(--color-surface); color: var(--color-fg); margin-top: var(--space-8);">
+               <div class="flex justify-between items-center mb-6" style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-3); opacity: 0.8;">
+                 <span class="font-mono text-xs uppercase text-muted" style="letter-spacing: 0.1em;">SYS_MONITOR_v1.0</span>
+                 <span class="font-mono text-xs uppercase text-accent flex items-center gap-2" style="letter-spacing: 0.1em;">
+                   <span class="terminal__dot" style="background: var(--color-accent); opacity: 1;"></span> ONLINE
+                 </span>
+               </div>
+               
+               <div class="font-mono text-xs" style="line-height: 2.2;">
+                 <div class="flex justify-between"><span>> init network_fundamentals</span> <span class="text-accent">[ACTIVE]</span></div>
+                 <div class="flex justify-between"><span>> compile python_cpp_nasm</span> <span class="text-accent">[ACTIVE]</span></div>
+                 <div class="flex justify-between"><span>> boot_linux_env kali</span> <span class="text-accent">[ACTIVE]</span></div>
+                 <div class="flex justify-between text-muted" style="opacity: 0.5;"><span>> deploy_ctf_toolkit</span> <span>[PENDING]</span></div>
+                 <div class="flex justify-between text-muted" style="opacity: 0.5;"><span>> run_web_exploitation</span> <span>[QUEUED]</span></div>
+               </div>
+
+               <!-- Graphical Indicator -->
+               <div class="monitor-bars mt-6 flex items-end gap-1" style="height: 60px; border: 1px solid var(--color-border); padding: 4px; overflow: hidden;">
+                 <div class="monitor-bar" style="flex: 1; --height: 30%; --delay: 0.1s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 50%; --delay: 0.3s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 80%; --delay: 0.5s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 40%; --delay: 0.2s;"></div>
+                 <div class="monitor-bar accent" style="flex: 1; --height: 100%; --delay: 0.7s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 60%; --delay: 0.4s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 90%; --delay: 0.6s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 20%; --delay: 0.1s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 75%; --delay: 0.3s;"></div>
+                 <div class="monitor-bar" style="flex: 1; --height: 45%; --delay: 0.5s;"></div>
+               </div>
+               
+               <div class="font-mono text-xs text-muted mt-4" style="line-height: 1.5; opacity: 0.6;">
+                 > Tracking progression metrics...
+               </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
 
     <!-- Cybersecurity Foundations Matrix -->
-    <section class="cybersec">
+    <section id="matrix" class="cybersec">
       <div class="container section-pad reveal">
-        <span class="section-number">04</span>
+        <span class="section-number">05</span>
         <h2 class="section-title">CYBERSECURITY<br><span class="text-accent text-light">MATRIX</span></h2>
         
-        <table class="swiss-table mt-12">
-          <thead>
-            <tr>
-              <th>Foundations</th>
-              <th>Security Domains</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Networking &amp; Protocols (TCP/IP, DNS, HTTP)</td>
-              <td>Ethical Hacking Concepts</td>
-            </tr>
-            <tr>
-              <td>Operating Systems &amp; Linux</td>
-              <td>CTF Challenges</td>
-            </tr>
-            <tr>
-              <td>Python &amp; C++ Scripting</td>
-              <td>Web Application Security</td>
-            </tr>
-            <tr>
-              <td>Low-Level Systems &amp; Memory Concepts</td>
-              <td>Cryptography Basics</td>
-            </tr>
-          </tbody>
-        </table>
+        <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%;">
+          <table class="swiss-table mt-12">
+            <thead>
+              <tr>
+                <th>Foundations</th>
+                <th>Security Domains</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Networking &amp; Protocols (TCP/IP, DNS, HTTP)</td>
+                <td>Ethical Hacking Concepts</td>
+              </tr>
+              <tr>
+                <td>Operating Systems &amp; Linux</td>
+                <td>CTF Challenges</td>
+              </tr>
+              <tr>
+                <td>Python, C++ &amp; Assembly (NASM)</td>
+                <td>Web Application Security</td>
+              </tr>
+              <tr>
+                <td>Low-Level Systems &amp; Memory Concepts</td>
+                <td>Cryptography Basics</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -460,7 +570,7 @@
       <div class="container section-pad">
         <div class="flex justify-between items-end mb-8 reveal">
           <div>
-            <span class="section-number">05</span>
+            <span class="section-number">06</span>
             <h2 class="section-title">SELECTED<br>WORK</h2>
           </div>
           <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="btn btn-outline hide-mobile">
@@ -468,56 +578,28 @@
           </a>
         </div>
 
-        <div class="projects__grid reveal delay-1">
+        <div class="project-vault reveal delay-1" style="border: var(--border-thick); padding: var(--space-8); background: var(--color-surface); position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 320px; text-align: center;">
+          <!-- decorative background -->
+          <div aria-hidden="true" style="position: absolute; top:0; left:0; right:0; bottom:0; opacity: 0.05; background-image: radial-gradient(var(--color-fg) 1px, transparent 1px); background-size: 24px 24px;"></div>
           
-          <!-- Project Placeholder 1 -->
-          <div class="project-card coming-soon">
-            <div class="project-card__top">
-              <div class="project-card__number">01</div>
-              <h3 class="text-xl font-bold mb-2">Network Packet Analyzer</h3>
-              <p class="text-sm text-muted">A CLI tool built to parse and analyze TCP/IP headers, extracting data payloads for security auditing.</p>
+          <div style="z-index: 1; display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
+            <div style="padding: 1.25rem; border: var(--border-thin); background: var(--color-bg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="square">
+                <rect x="3" y="11" width="18" height="11" rx="0" ry="0"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
             </div>
-            <div class="project-card__bottom">
-              <div class="flex gap-2">
-                <span class="tag tag-outline">C++</span>
-                <span class="tag tag-outline">Networking</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Placeholder 2 -->
-          <div class="project-card coming-soon">
-            <div class="project-card__top">
-              <div class="project-card__number">02</div>
-              <h3 class="text-xl font-bold mb-2">OSINT Dashboard</h3>
-              <p class="text-sm text-muted">A Python-based utility to aggregate public intelligence markers and generate threat summary reports.</p>
-            </div>
-            <div class="project-card__bottom">
-              <div class="flex gap-2">
-                <span class="tag tag-outline">Python</span>
-                <span class="tag tag-outline">Security</span>
-              </div>
+            <h3 class="text-2xl font-bold mb-2" style="letter-spacing: 0.1em; text-transform: uppercase;">Repository <span class="text-accent">Locked</span></h3>
+            <p class="text-sm font-mono text-muted max-w-lg mt-2" style="line-height: 1.6;">
+              > Unauthorized access.<br>
+              > Currently establishing foundational architectures in Semester 1.<br>
+              > Advanced offensive and defensive project deployments are scheduled for Phase 02.
+            </p>
+            <div class="mt-8 flex gap-3 flex-wrap justify-center">
+               <span class="tag tag-outline" style="font-family: var(--font-mono);">SYSTEM: INITIATING</span>
+               <span class="tag tag-outline" style="font-family: var(--font-mono);">ENCRYPTION: ACTIVE</span>
             </div>
           </div>
-
-          <!-- Project Placeholder 3 -->
-          <div class="project-card coming-soon hide-mobile">
-            <div class="project-card__top">
-              <div class="project-card__number">03</div>
-              <h3 class="text-xl font-bold mb-2">CTF Write-up Archive</h3>
-              <p class="text-sm text-muted">A repository of structured methodologies and solutions for web exploitation and cryptography challenges.</p>
-            </div>
-            <div class="project-card__bottom">
-              <div class="flex gap-2">
-                <span class="tag tag-outline">Documentation</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="projects__note reveal delay-2">
-          > Currently in Semester 1. Major project repositories are under construction and will be deployed upon phase completion.
         </div>
         
         <!-- Mobile GitHub button -->
@@ -535,12 +617,12 @@
         <div class="contact__layout">
           
           <div class="contact__text reveal-left">
-            <span class="section-number">06</span>
+            <span class="section-number">07</span>
             <h2 class="section-title">INITIATE<br><span class="text-accent text-light">CONNECTION</span></h2>
             
             <div class="mt-8 max-w-sm">
-              <p class="contact__tagline">Open to collaborations, CTF teams, and open source assignments.</p>
-              <p class="contact__sub">Whether you have a specific project in mind or just want to discuss cybersecurity architecture, reach out.</p>
+              <p class="contact__tagline">Open to collaborations, CTF teams, and open-source assignments.</p>
+              <p class="contact__sub">Whether you have a specific project in mind or simply want to discuss cybersecurity architectures, feel free to reach out.</p>
               
               <a href="mailto:sumitsharma9753108@gmail.com" class="btn btn-accent">ESTABLISH LINK</a>
             </div>
@@ -608,7 +690,7 @@
       <div class="nav__logo text-xl">SUMIT<span>_</span></div>
       
       <div class="footer__copy">
-        &copy; <span id="year">2026</span> Sumit Sharma &mdash; Built with HTML, CSS & JS
+        &copy; <span id="year">2026</span> Sumit Sharma
       </div>
       
       <div class="flex gap-4 items-center">

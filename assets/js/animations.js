@@ -4,6 +4,18 @@ export function initAnimations() {
   initReveal();
   initSkillBars();
   initCountUp();
+  initGridParallax();
+}
+
+/* Grid Parallax Effect */
+function initGridParallax() {
+  const grid = document.querySelector('.hero__grid-lines');
+  if (!grid) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    grid.style.transform = `translateY(${scrollY * 0.2}px)`;
+  }, { passive: true });
 }
 
 /* Scroll Reveal */

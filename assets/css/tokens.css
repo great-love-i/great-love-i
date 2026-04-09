@@ -75,15 +75,17 @@
 
 /* Dark Mode Token Overrides */
 [data-theme="dark"] {
-  --color-bg:        #0A0A0A;
-  --color-fg:        #F5F5F0;
-  --color-border:    #F5F5F0;
-  --color-surface:   #1A1A1A;
+  --color-bg:        #121212;
+  --color-fg:        #E4E4E4;
+  --color-border:    #383838;
+  --color-surface:   #1C1C1C;
   --color-surface-2: #2A2A2A;
-  --color-muted:     #9B9B9B;
-  --color-tag-bg:    #F5F5F0;
-  --color-tag-fg:    #0A0A0A;
-  --shadow-sm:  2px 2px 0px var(--color-fg);
-  --shadow-md:  4px 4px 0px var(--color-fg);
-  --shadow-lg:  6px 6px 0px var(--color-fg);
+  --color-muted:     #999999;
+  --color-tag-bg:    #383838;
+  --color-tag-fg:    #E4E4E4;
+  
+  /* Brutalist shadows should be black in dark mode, not white */
+  --shadow-sm:  2px 2px 0px #000000;
+  --shadow-md:  4px 4px 0px #000000;
+  --shadow-lg:  6px 6px 0px #000000;
 }

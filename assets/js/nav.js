@@ -25,24 +25,29 @@ export function initNav() {
 
     // Active section highlight
     let current = '';
+    const threshold = window.innerHeight / 3;
+
     sections.forEach(section => {
-      const sectionTop    = section.offsetTop - 100;
-      const sectionHeight = section.offsetHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - threshold) {
         current = section.getAttribute('id');
       }
     });
 
+    // Special case for scrolling back to the very top (Hero)
+    if (scrollY < 100) current = 'home';
+
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      const href = link.getAttribute('href').substring(1);
+      if (href === current) {
         link.classList.add('active');
       }
     });
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // run on mount
+  setTimeout(onScroll, 100); // Small delay to ensure offsets are ready
 
   /* Mobile Menu Toggle */
   function toggleMenu(open) {
