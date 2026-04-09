@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Sharma — Cybersecurity & Networking</title>
+  <meta name="description" content="Portfolio of Sumit Sharma, a Cybersecurity & Networking Student at Lincoln International College, Kathmandu.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking">
+  <meta property="og:description" content="First-semester Cybersecurity student focused on C++, Python, networking fundamentals, and CTF challenges.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sumit Sharma — Cybersecurity & Networking">
+
+  <!-- Fonts: preconnect first, then stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking">
+  <meta property="og:description" content="Portfolio of Sumit Sharma, a 1st Semester Cybersecurity student at Lincoln International College, Kathmandu.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Noscript fallback: keep reveal elements visible if JS is disabled -->
+  <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1;transform:none;}</style></noscript>
+
+  <!-- JS -->
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="nav" class="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">SUMIT<span>_</span></a>
+      
+      <div class="nav__links">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#stack" class="nav__link">Stack</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="theme-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+    <div id="nav-progress" class="nav__progress"></div>
+  </nav>
+
+  <!-- Mobile Sidebar Menu -->
+  <div id="mobile-menu" class="nav__mobile-menu">
+    <a href="#about" class="nav__mobile-link">ABOUT</a>
+    <a href="#stack" class="nav__mobile-link">STACK</a>
+    <a href="#projects" class="nav__mobile-link">PROJECTS</a>
+    <a href="#contact" class="nav__mobile-link">CONTACT</a>
+    
+    <button class="theme-toggle mt-8" aria-label="Toggle dark mode" style="width: 48px; height: 48px;">
+      <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero container relative">
+      <div class="hero__grid-lines"></div>
+      
+      <!-- Abstract SVG Accent -->
+      <div class="hero__accent-block" aria-hidden="true" style="top:2rem; right:2rem; opacity:0.1; width:clamp(120px, 30vw, 300px); background: transparent;">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" fill="var(--color-accent)"/>
+          <circle cx="50" cy="50" r="40" fill="var(--color-bg)"/>
+          <rect x="45" y="0" width="10" height="100" fill="var(--color-accent)"/>
+          <rect x="0" y="45" width="100" height="10" fill="var(--color-accent)"/>
+        </svg>
+      </div>
+
+      <div class="hero__content section-pad">
+        <div class="hero__split">
+          
+          <div class="hero__text reveal">
+            <div class="hero__eyebrow">
+              <span class="hero__eyebrow-line"></span>
+              <span class="label">Cybersecurity Student // Nepal</span>
+            </div>
+            
+            <h1 class="hero__name">
+              <span class="first text-accent swiss-cross">SUMIT</span>
+              <span class="last">SHARMA</span>
+            </h1>
+            
+            <div class="hero__meta">
+              <p class="hero__tagline">
+                I'm a first-semester Cybersecurity & Networking student focused on mastering <strong>core concepts</strong>, building <strong>robust systems</strong>, and solving <strong>CTF challenges</strong>.
+              </p>
+              <div class="hero__actions">
+                <a href="#about" class="btn btn-primary">Discover More</a>
+                <a href="#contact" class="btn btn-outline">Connect</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div style="border: var(--border-thick); width: 100%; aspect-ratio: 1;">
+              <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" style="background:var(--color-bg);">
+                <path d="M0 100h400M0 200h400M0 300h400M100 0v400M200 0v400M300 0v400" stroke="var(--color-border)" stroke-width="2" opacity="0.1"/>
+                <path d="M50 400 L150 250 L250 250 L350 400 Z" fill="var(--color-fg)"/>
+                <path d="M200 250 L200 400" stroke="var(--color-bg)" stroke-width="4"/>
+                <path d="M150 250 L200 350 L250 250" stroke="var(--color-bg)" stroke-width="4" fill="none"/>
+                <rect x="180" y="220" width="40" height="40" fill="var(--color-fg)"/>
+                <rect x="120" y="80" width="160" height="150" rx="10" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-surface)"/>
+                <path d="M200 80 L200 230" stroke="var(--color-fg)" stroke-width="4"/>
+                <path d="M110 90 L160 40 L280 40 L290 90" fill="var(--color-fg)"/>
+                <circle cx="160" cy="150" r="30" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-bg)"/>
+                <circle cx="240" cy="150" r="30" stroke="var(--color-fg)" stroke-width="8" fill="var(--color-bg)"/>
+                <line x1="190" y1="150" x2="210" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
+                <line x1="120" y1="150" x2="130" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
+                <line x1="270" y1="150" x2="280" y2="150" stroke="var(--color-fg)" stroke-width="8"/>
+                <circle cx="160" cy="150" r="8" fill="var(--color-fg)"/>
+                <circle cx="240" cy="150" r="8" fill="var(--color-fg)"/>
+                <path d="M200 150 L200 185 L180 185" stroke="var(--color-fg)" stroke-width="4" fill="none"/>
+                <line x1="180" y1="205" x2="220" y2="205" stroke="var(--color-fg)" stroke-width="6"/>
+                <circle cx="260" cy="190" r="6" fill="var(--color-accent)"/>
+                <path d="M260 190 L260 210 L320 210" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
+                <rect x="0" y="0" width="20" height="20" fill="var(--color-fg)"/>
+                <rect x="380" y="380" width="20" height="20" fill="var(--color-accent)"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container section-pad">
+        <div class="about__layout">
+          
+          <div class="about__image-col reveal-left">
+            <span class="section-number">01</span>
+            <h2 class="section-title">SYSTEM<br><span class="text-accent text-light">IDENTITY</span></h2>
+            
+            <p class="text-md mt-6">
+              Currently pursuing a BSc. (Hons) in Cyber Security & Networking Technology at Lincoln International College, Kathmandu. Building foundations in low-level programming and ethical hacking.
+            </p>
+
+            <div class="about__stats">
+              <div class="about__stat">
+                <div class="about__stat-value" data-count="1" data-suffix="st">0</div>
+                <div class="about__stat-label">Semester</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-value text-accent" data-count="100" data-suffix="%">0</div>
+                <div class="about__stat-label">Drive</div>
+              </div>
+            </div>
+            
+            <p class="text-md mt-6">
+              Establish secure architectures and master offensive/defensive methodologies. Focusing on lower-level systems and protocol complexity.
+            </p>
+          </div>
+
+          <div class="about__text-col reveal-right">
+            <!-- Terminal Block -->
+            <div id="terminal-block" class="terminal" aria-label="Terminal readout of Sumit's profile">
+              <div class="terminal__header">
+                <div class="terminal__dot"></div>
+                <div class="terminal__dot"></div>
+                <div class="terminal__dot"></div>
+                <div class="terminal__title">bash - sumit@kali:~</div>
+              </div>
+              <div id="terminal-rows" class="mb-4">
+                <!-- JS will inject rows here -->
+              </div>
+              <div class="terminal__row">
+                <span class="terminal__key">sumit@kali:~$</span>
+                <span class="terminal__val"><span id="terminal-cursor" class="terminal__cursor" style="display:none;"></span></span>
+              </div>
+            </div>
+            
+            <p class="mt-8 font-mono text-sm text-muted">
+              > Root access granted.<br>
+              > Parsing professional objectives...<br>
+              > Goal: Establish secure architectures and master offensive/defensive methodologies.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="stack" class="stack">
+      <div class="container section-pad">
+        <div class="stack__header reveal">
+          <div>
+            <span class="section-number">02</span>
+            <h2 class="section-title">CORE<br>STACK</h2>
+          </div>
+          <p class="text-md text-muted" style="max-width: 400px;">
+            Languages, tools, and environments I use daily to build and secure systems.
+          </p>
+        </div>
+
+        <div class="stack__groups">
+          
+          <!-- Languages -->
+          <div class="reveal delay-1">
+            <h3 class="stack__group-label">Languages</h3>
+            <div class="stack__icons">
+              <!-- C++ -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M22.016 11.238l-4.54-7.863c-.432-.746-1.554-1.298-2.415-1.298h-9.08c-.862 0-1.983.552-2.416 1.299L-1 11.239a2.766 2.766 0 0 0 0 2.597l4.54 7.864c.432.747 1.554 1.3 2.416 1.3h9.08c.861 0 1.983-.553 2.415-1.3l4.54-7.864c.288-.499.432-1.049.432-1.598 0-.55-.144-1.1-.432-1.6zm-11.89-2.072h2.247v1.89h1.89v2.247h-1.89v1.889h-2.247v-1.89h-1.889v-2.247h1.89v-1.89zM8.337 13.313H6.09v1.89H4.2v-1.89H2.311v-2.247H4.2V9.166h1.89v1.89h2.247v2.247zM20.22 13.313h-2.246v1.89H16.08v-1.89h-1.888v-2.247h1.889V9.166h1.892v1.89h2.247v2.247z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">C++</span>
+              </div>
+              <!-- Python -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12.001 2.227c-3.23.003-4.238.406-5.112.985-.806.536-1.336 1.408-1.564 3.013-.23 1.631-.225 3.393-.225 3.393H9.426v1.127H5.068C4.306 10.745 2 11.234 2 14.54c0 1.674.673 2.875 1.597 3.593.985.765 2.378 1.077 3.993 1.157v-2.612c0-1.84 1.492-3.332 3.332-3.332h2.72c.866 0 1.565-.7 1.565-1.565V6.892c0-.575-.466-1.042-1.042-1.042h-3.92V4.544a4.135 4.135 0 0 1 2.321-.497c2.585.163 2.946.96 3.125 1.942.138.75.137 1.503.137 1.503h2.375v-1.54c.004-2.825-1.258-3.72-2.73-4.148-1.218-.354-2.25-.436-3.468-.436V2.228h-.004zm.983 1.62c.484 0 .878.394.878.878 0 .484-.394.878-.878.878-.484 0-.878-.394-.878-.878 0-.484.394-.878.878-.878zm5.95 5.39c.002.32-.016.634-.047.935-.152.883-.544 1.512-1 1.966-.62.618-1.42.92-2.185.92H14.15v2.855c0 1.34-1.09 2.432-2.43 2.432h-3.66c-.462 0-.837.375-.837.837v3.914h1.168c1.373-.016 2.502-.132 3.447-.442 1.393-.454 2.898-1.464 2.898-4.636v-1.128h-4.32V15.22h4.59c1.65-.002 3.15-.71 3.94-1.78.715-.968.892-2.213 1.066-3.414.13-1.01.272-2.022.272-2.022h-2.316zm-7.904 8.655c.484 0 .878.394.878.878 0 .484-.394.878-.878.878-.484 0-.878-.394-.878-.878a.877.877 0 0 1 .878-.878z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">Python</span>
+              </div>
+              <!-- C -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9.5h-4.5c-.28 0-.5.22-.5.5v2c0 .28.22.5.5.5h4.5c.28 0 .5-.22.5-.5v-2c0-.28-.22-.5-.5-.5z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">C</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="reveal delay-2">
+            <h3 class="stack__group-label">Tools & Environment</h3>
+            <div class="stack__icons">
+              <!-- Linux -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12.008 1.13c-.63 0-1.127.05-1.512.227-1.115.513-1.678 1.536-2.08 3.104-.6 2.338-.567 4.966-1.096 6.136-.2.435-.452.627-.8.74-1.018.31-2.906.402-3.8.762-2.316.924-1.378 2.744.3 3.016.963.153 2.71.05 4.5-.472-.924 1.144-1.6 3.1-1.365 3.996.34 1.304 1.706 1.156 2.46-.388.58-1.2 1-3.23.957-5.068l1.458-.16s.484 2.802-.005 5.067c-.25 1.14.773 1.39 1.173.81.4-.582.684-2.825-.333-3.896.79.28 1.62.24 1.62.24s.09 1.053-.29 3.056c-.366 1.94 1.06 2.052 1.4.92.518-1.745.242-4.004-.3-4.22-.058 1.83 2.022 1.83 2.378.14.28-1.306-.51-2.47-.946-3.15-1.106-1.547-1.082-3.902-1.518-6.17-.417-2.144-.814-3.52-2.03-4.222-.52-.298-1.024-.43-1.673-.438h.003L12 1.13zm-.948 4.636a1.18 1.18 0 0 1 1.18 1.18 1.18 1.18 0 0 1-1.18 1.181 1.18 1.18 0 0 1-1.182-1.18 1.18 1.18 0 0 1 1.182-1.181zm2.345 0a1.18 1.18 0 0 1 1.18 1.18 1.18 1.18 0 0 1-1.18 1.181 1.18 1.18 0 0 1-1.182-1.18 1.18 1.18 0 0 1 1.182-1.181zm-2.472 4.14c1.177 0 2.128.747 2.128 1.666S12.11 13.24 10.932 13.24c-1.178 0-2.13-.746-2.13-1.665s.952-1.666 2.13-1.666z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">Linux</span>
+              </div>
+              <!-- Git -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M23.546 10.93L13.067.452a2.956 2.956 0 0 0-4.184 0l-1.92 1.92 2.766 2.766c.86-.33 1.865-.088 2.508.555.71.71.936 1.764.575 2.656l2.84 2.84c.892-.36 1.946-.134 2.656.576.993.992.993 2.602 0 3.593-.993.993-2.602.993-3.594 0-.71-.71-.937-1.764-.576-2.656l-3.32-3.32v4c.264.195.5.45.688.75 1.054 1.637.583 3.82-1.054 4.873a3.633 3.633 0 0 1-4.873-1.054c-1.054-1.637-.583-3.82 1.054-4.873.342-.22.716-.367 1.1-.444v-4c-.385-.077-.758-.224-1.1-.444-1.637-1.054-2.108-3.236-1.054-4.873a3.633 3.633 0 0 1 4.54-1.39l2.254-2.254L3.102 7.7a2.956 2.956 0 0 0 0 4.184L13.58 22.36a2.956 2.956 0 0 0 4.182 0l5.783-5.783a2.956 2.956 0 0 0 0-4.184z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">Git</span>
+              </div>
+              <!-- GitHub -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">GitHub</span>
+              </div>
+              <!-- VS Code -->
+              <div class="skill-card">
+                <div class="skill-card__icon">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                  </svg>
+                </div>
+                <span class="skill-card__label">VS Code</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Progress Section -->
+    <section class="learning">
+      <div class="container section-pad">
+        <div class="learning__layout">
+          
+          <div class="learning__skills reveal-left">
+            <span class="section-number">03</span>
+            <h2 class="section-title">CURRENT<br>FOCUS</h2>
+            <div class="rule-accent"></div>
+            
+            <p class="mb-8">
+              My current academic and independent learning objectives, mapped to measurable progress in core technical domains.
+            </p>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">C++ / Python / C</span>
+                <span class="skill-bar__pct" data-count="60" data-suffix="%">0</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" style="--target-width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar mt-6">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Networking (TCP/IP, DNS)</span>
+                <span class="skill-bar__pct" data-count="45" data-suffix="%">0</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" style="--target-width: 45%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar mt-6">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Linux Environment</span>
+                <span class="skill-bar__pct text-accent" data-count="75" data-suffix="%">0</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill accent" style="--target-width: 75%;"></div>
+              </div>
+            </div>
+            
+             <div class="skill-bar mt-6">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">CTF Challenges / Hacking</span>
+                <span class="skill-bar__pct" data-count="30" data-suffix="%">0</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" style="--target-width: 30%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="learning__info reveal-right text-md">
+            <ol class="numbered-list">
+              <li class="numbered-list__item">
+                <span class="numbered-list__num">01.</span>
+                <div class="numbered-list__text">
+                  <strong>Coursework Application</strong><br>
+                  Building robust CLI tools and mastering memory management concepts in C and C++.
+                </div>
+              </li>
+              <li class="numbered-list__item">
+                <span class="numbered-list__num">02.</span>
+                <div class="numbered-list__text">
+                  <strong>Protocol Analysis</strong><br>
+                  Deep dive into fundamental networking protocols (HTTP, TCP/IP) and subnetting structures via packet inspection.
+                </div>
+              </li>
+              <li class="numbered-list__item">
+                <span class="numbered-list__num">03.</span>
+                <div class="numbered-list__text">
+                  <strong>Offensive Security</strong><br>
+                  Engaging with entry-level CTF challenges to understand vulnerability exploitation and patching workflows.
+                </div>
+              </li>
+            </ol>
+            
+            <!-- EKG / Network Pulse SVG -->
+            <div class="mt-8 relative" style="width: 100%; height: 120px; overflow: hidden; border: var(--border-thin);">
+              <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%;">
+                <path d="M-20 60 L80 60 L100 20 L150 100 L180 60 L420 60" fill="none" stroke="var(--color-accent)" stroke-width="3"/>
+                <circle cx="100" cy="20" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
+                <circle cx="150" cy="100" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
+                <circle cx="180" cy="60" r="5" fill="var(--color-bg)" stroke="var(--color-fg)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cybersecurity Foundations Matrix -->
+    <section class="cybersec">
+      <div class="container section-pad reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">CYBERSECURITY<br><span class="text-accent text-light">MATRIX</span></h2>
+        
+        <table class="swiss-table mt-12">
+          <thead>
+            <tr>
+              <th>Foundations</th>
+              <th>Security Domains</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Networking &amp; Protocols (TCP/IP, DNS, HTTP)</td>
+              <td>Ethical Hacking Concepts</td>
+            </tr>
+            <tr>
+              <td>Operating Systems &amp; Linux</td>
+              <td>CTF Challenges</td>
+            </tr>
+            <tr>
+              <td>Python &amp; C++ Scripting</td>
+              <td>Web Application Security</td>
+            </tr>
+            <tr>
+              <td>Low-Level Systems &amp; Memory Concepts</td>
+              <td>Cryptography Basics</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container section-pad">
+        <div class="flex justify-between items-end mb-8 reveal">
+          <div>
+            <span class="section-number">05</span>
+            <h2 class="section-title">SELECTED<br>WORK</h2>
+          </div>
+          <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="btn btn-outline hide-mobile">
+            View GitHub
+          </a>
+        </div>
+
+        <div class="projects__grid reveal delay-1">
+          
+          <!-- Project Placeholder 1 -->
+          <div class="project-card coming-soon">
+            <div class="project-card__top">
+              <div class="project-card__number">01</div>
+              <h3 class="text-xl font-bold mb-2">Network Packet Analyzer</h3>
+              <p class="text-sm text-muted">A CLI tool built to parse and analyze TCP/IP headers, extracting data payloads for security auditing.</p>
+            </div>
+            <div class="project-card__bottom">
+              <div class="flex gap-2">
+                <span class="tag tag-outline">C++</span>
+                <span class="tag tag-outline">Networking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Placeholder 2 -->
+          <div class="project-card coming-soon">
+            <div class="project-card__top">
+              <div class="project-card__number">02</div>
+              <h3 class="text-xl font-bold mb-2">OSINT Dashboard</h3>
+              <p class="text-sm text-muted">A Python-based utility to aggregate public intelligence markers and generate threat summary reports.</p>
+            </div>
+            <div class="project-card__bottom">
+              <div class="flex gap-2">
+                <span class="tag tag-outline">Python</span>
+                <span class="tag tag-outline">Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Placeholder 3 -->
+          <div class="project-card coming-soon hide-mobile">
+            <div class="project-card__top">
+              <div class="project-card__number">03</div>
+              <h3 class="text-xl font-bold mb-2">CTF Write-up Archive</h3>
+              <p class="text-sm text-muted">A repository of structured methodologies and solutions for web exploitation and cryptography challenges.</p>
+            </div>
+            <div class="project-card__bottom">
+              <div class="flex gap-2">
+                <span class="tag tag-outline">Documentation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="projects__note reveal delay-2">
+          > Currently in Semester 1. Major project repositories are under construction and will be deployed upon phase completion.
+        </div>
+        
+        <!-- Mobile GitHub button -->
+        <div class="mt-8 hide-desktop reveal delay-3">
+          <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full justify-center">
+            View GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container section-pad">
+        <div class="contact__layout">
+          
+          <div class="contact__text reveal-left">
+            <span class="section-number">06</span>
+            <h2 class="section-title">INITIATE<br><span class="text-accent text-light">CONNECTION</span></h2>
+            
+            <div class="mt-8 max-w-sm">
+              <p class="contact__tagline">Open to collaborations, CTF teams, and open source assignments.</p>
+              <p class="contact__sub">Whether you have a specific project in mind or just want to discuss cybersecurity architecture, reach out.</p>
+              
+              <a href="mailto:sumitsharma9753108@gmail.com" class="btn btn-accent">ESTABLISH LINK</a>
+            </div>
+          </div>
+
+          <div class="contact__links reveal-right">
+            <!-- Email -->
+            <a href="mailto:sumitsharma9753108@gmail.com" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value" style="max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">sumitsharma9753108@gmail.com</span>
+            </a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <span class="contact-link__label">GitHub</span>
+              <span class="contact-link__value">great-love-i</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/sumit-sharma-placeholder" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <span class="contact-link__label">LinkedIn</span>
+              <span class="contact-link__value">/in/sumit-sharma</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/sumit_sharma_o0" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-link__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <span class="contact-link__label">Instagram</span>
+              <span class="contact-link__value">@sumit_sharma_o0</span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer__inner">
+      <div class="nav__logo text-xl">SUMIT<span>_</span></div>
+      
+      <div class="footer__copy">
+        &copy; <span id="year">2026</span> Sumit Sharma &mdash; Built with HTML, CSS & JS
+      </div>
+      
+      <div class="flex gap-4 items-center">
+        <a href="#home" class="footer__copy" style="text-decoration:none;">Back to top &uarr;</a>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" aria-hidden="true">
+          <rect x="0" y="0" width="10" height="10"/>
+          <rect x="14" y="14" width="10" height="10"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    /* Year + Dark Mode + Back to Top */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* Dark mode toggle — handles multiple buttons */
+    const root = document.documentElement;
+    const toggles = document.querySelectorAll('.theme-toggle');
+    const stored = localStorage.getItem('theme');
+    
+    if (stored === 'dark') root.setAttribute('data-theme', 'dark');
+    
+    toggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        const newTheme = isDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    });
+
+    /* Back to top */
+    const backBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (backBtn) backBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    
+    if (backBtn) {
+      backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+  </script>
+</body>
+</html>
