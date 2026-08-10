@@ -34,9 +34,14 @@ A fast, dependency-free personal portfolio built with semantic HTML, modern CSS,
 ```
 ├── index.html                  # Main portfolio page
 ├── README.md                   # Project documentation
+├── robots.txt                  # Crawler rules + sitemap reference
+├── sitemap.xml                 # XML sitemap for search engines
+├── site.webmanifest            # PWA manifest (name, theme, icons)
 └── assets/
     ├── css/
     │   └── style.css           # Combined stylesheet (tokens, layout, components)
+    ├── icons/
+    │   └── favicon.svg         # SVG favicon / app icon
     └── js/
         ├── main.js             # Entry point — theme, back-to-top, year
         └── modules/
@@ -82,7 +87,8 @@ The site follows WCAG-minded practices:
 
 - [ ] Add project showcase cards with live demos
 - [ ] Generate Open Graph preview image
-- [ ] Add `sitemap.xml` and `robots.txt`
+- [x] Add `sitemap.xml` and `robots.txt`
+- [x] Add favicon and PWA web manifest
 - [ ] Integrate a contact form with validation
 
 ## Contact
