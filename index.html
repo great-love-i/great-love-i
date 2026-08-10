@@ -19,12 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/grid.css">
-  <link rel="stylesheet" href="assets/css/typography.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Noscript fallback: keep reveal elements visible if JS is disabled -->
   <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1;transform:none;}</style></noscript>
@@ -162,28 +157,6 @@
               <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block;">
                 <defs>
                   <!-- Rotating Scanner Animation -->
-                  <style>
-                    @keyframes rotate-scanner {
-                      from { transform: rotate(0deg); }
-                      to { transform: rotate(360deg); }
-                    }
-                    .scanner-arm { 
-                      transform-origin: 200px 200px;
-                      animation: rotate-scanner 6s linear infinite; 
-                    }
-                    
-                    @keyframes node-ping {
-                      0%, 100% { opacity: 0.3; transform: scale(0.9); }
-                      50% { opacity: 1; transform: scale(1.1); }
-                    }
-                    .radar-node { 
-                      transform-origin: center;
-                      animation: node-ping 2.5s ease-in-out infinite; 
-                    }
-                    
-                    .radar-grid { stroke: var(--color-border); opacity: 0.15; }
-                    .radar-accent { stroke: var(--color-accent); opacity: 0.4; }
-                  </style>
 
                   <!-- Scanner sweep gradient -->
                   <radialGradient id="scanner-glow" cx="200" cy="200" r="200" gradientUnits="userSpaceOnUse">

@@ -10,11 +10,18 @@ export function initAnimations() {
 /* Grid Parallax Effect */
 function initGridParallax() {
   const grid = document.querySelector('.hero__grid-lines');
-  if (!grid) return;
+  if (!grid || window.matchMedia('(pointer: coarse)').matches) return;
 
+  let ticking = false;
   window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    grid.style.transform = `translateY(${scrollY * 0.2}px)`;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        grid.style.transform = `translateY(${scrollY * 0.2}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 }
 
@@ -32,7 +39,7 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.05, rootMargin: '0px' }
   );
 
   revealEls.forEach(el => observer.observe(el));
