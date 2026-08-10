@@ -9,7 +9,7 @@ export function initAnimations() {
 /* Grid Parallax Effect */
 function initGridParallax() {
   const grid = document.querySelector('.hero__grid-lines');
-  if (!grid || window.matchMedia('(pointer: coarse)').matches) return;
+  if (!grid || window.matchMedia('(pointer: coarse)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   let ticking = false;
   window.addEventListener('scroll', () => {

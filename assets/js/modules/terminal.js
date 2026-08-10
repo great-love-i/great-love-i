@@ -4,7 +4,7 @@ const ABOUT_DATA = [
   { key: 'Name',        val: 'Sumit Sharma' },
   { key: 'Location',    val: 'Kathmandu, Nepal' },
   { key: 'Institution', val: 'Lincoln International College' },
-  { key: 'Degree',      val: 'BCs. (Hons) Cyber Security & Networking' },
+  { key: 'Degree',      val: 'BSc. (Hons) Cyber Security & Networking' },
   { key: 'Semester',    val: '1st Semester' },
   { key: 'Goal',        val: 'Cybersecurity Professional' },
   { key: 'Stack',       val: 'C++   Python   C' },

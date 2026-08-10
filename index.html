@@ -48,8 +48,8 @@
       </div>
 
       <div class="flex items-center gap-4">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <svg id="theme-icon" viewBox="0 0 24 24">
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
             <line x1="12" y1="21" x2="12" y2="23"/>
@@ -61,7 +61,7 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
         </button>
-        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="hamburger" type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
@@ -81,8 +81,8 @@
     <a href="#projects" class="nav__mobile-link">PROJECTS</a>
     <a href="#contact" class="nav__mobile-link">CONTACT</a>
     
-    <button class="theme-toggle theme-toggle--mobile mt-8" aria-label="Toggle dark mode">
-      <svg viewBox="0 0 24 24">
+    <button type="button" class="theme-toggle theme-toggle--mobile mt-8" aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="5"/>
         <line x1="12" y1="1" x2="12" y2="3"/>
         <line x1="12" y1="21" x2="12" y2="23"/>
@@ -554,16 +554,16 @@
           
           <div class="project-vault__content">
             <div class="project-vault__panel">
-              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="square">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="square" aria-hidden="true" focusable="false">
                 <rect x="3" y="11" width="18" height="11" rx="0" ry="0"></rect>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-2 project-vault__title">Repository <span class="text-accent">Locked</span></h3>
+            <h3 class="text-2xl font-bold mb-2 project-vault__title">Selected Projects</h3>
             <p class="text-sm font-mono text-muted max-w-lg mt-2 project-vault__text">
-              > Unauthorized access.<br>
-              > Currently establishing foundational architectures in Semester 2.<br>
-              > Advanced offensive and defensive project deployments are scheduled for Phase 02.
+              > Building first-semester systems and security work as I move toward published project releases.<br>
+              > Explore my GitHub for code samples, small utilities, and learning experiments.<br>
+              > New portfolio projects will be shared once foundational architectures are complete.
             </p>
             <div class="mt-8 flex gap-3 flex-wrap justify-center">
                <span class="tag tag-outline tag--mono">SYSTEM: INITIATING</span>
@@ -623,9 +623,9 @@
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/sumit-sharma-placeholder" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <a href="https://linkedin.com/in/sumit-sharma" target="_blank" rel="noopener noreferrer" class="contact-link">
               <div class="contact-link__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true" focusable="false">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
@@ -674,8 +674,8 @@
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24">
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
