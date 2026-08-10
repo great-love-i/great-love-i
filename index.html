@@ -3,15 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumit Sharma — Cybersecurity & Networking</title>
-  <meta name="description" content="Portfolio of Sumit Sharma, a Cybersecurity & Networking Student at Lincoln International College, Kathmandu.">
+  <title>Sumit Sharma — Cybersecurity & Networking Portfolio</title>
+  <meta name="description" content="Sumit Sharma portfolio showcasing second-semester cybersecurity and networking work, including secure systems learning, CTF studies, and code samples.">
+  <link rel="canonical" href="/">
+  <meta name="author" content="Sumit Sharma">
+  <meta name="keywords" content="Sumit Sharma, cybersecurity portfolio, networking student, CTF, Linux, C++, Python, ethical hacking, secure architecture">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0A">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking">
-  <meta property="og:description" content="First-semester Cybersecurity student focused on C++, Python, networking fundamentals, and CTF challenges.">
+  <meta property="og:title" content="Sumit Sharma — Cybersecurity & Networking Portfolio">
+  <meta property="og:description" content="Second-semester cybersecurity student building secure systems and networking expertise through academics, CTF practice, and project work.">
+  <meta property="og:site_name" content="Sumit Sharma Portfolio">
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sumit Sharma — Cybersecurity & Networking">
+  <meta name="twitter:title" content="Sumit Sharma — Cybersecurity & Networking Portfolio">
+  <meta name="twitter:description" content="Second-semester cybersecurity student building secure systems and networking expertise through academics, CTF practice, and project work.">
+  <link rel="alternate" href="/" hreflang="en">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sumit Sharma",
+    "jobTitle": "Cybersecurity & Networking Student",
+    "worksFor": "Lincoln International College",
+    "url": "/",
+    "sameAs": [
+      "https://github.com/great-love-i",
+      "https://linkedin.com/in/sumit-sharma",
+      "https://instagram.com/sumit_sharma_o0"
+    ],
+    "description": "Second-semester Cybersecurity student focused on secure architectures, low-level systems, and network defense."
+  }
+  </script>
 
   <!-- Fonts: preconnect first, then stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,12 +55,12 @@
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
   <!-- Global Atmosphere -->
-  <div class="noise-overlay"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
   <!-- Navigation Bar -->
-  <nav id="nav" class="nav">
+  <nav id="nav" class="nav" aria-label="Primary navigation">
     <div class="nav__inner">
-      <a href="#home" class="nav__logo">SUMIT<span>_</span></a>
+      <a href="#home" class="nav__logo" aria-label="Go to home section">SUMIT<span>_</span></a>
       
       <div class="nav__links">
         <a href="#about" class="nav__link">About</a>
@@ -48,7 +73,7 @@
       </div>
 
       <div class="flex items-center gap-4">
-        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle dark mode">
+        <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
           <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
@@ -81,7 +106,7 @@
     <a href="#projects" class="nav__mobile-link">PROJECTS</a>
     <a href="#contact" class="nav__mobile-link">CONTACT</a>
     
-    <button type="button" class="theme-toggle theme-toggle--mobile mt-8" aria-label="Toggle dark mode">
+    <button type="button" class="theme-toggle theme-toggle--mobile mt-8" aria-label="Toggle dark mode" aria-pressed="false">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="5"/>
         <line x1="12" y1="1" x2="12" y2="3"/>
@@ -96,10 +121,10 @@
     </button>
   </div>
 
-  <main id="main-content">
+  <main id="main-content" aria-label="Main content">
     <!-- Hero Section -->
     <section id="home" class="hero container relative">
-      <div class="hero__grid-lines"></div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
       <div class="hero__background-text" aria-hidden="true">CYBERSECURITY</div>
       
       <!-- Data Traffic Background (Multi-layer) -->
@@ -186,7 +211,7 @@
                 <div class="terminal__dot"></div>
                 <div class="terminal__title">bash - sumit@kali:~</div>
               </div>
-              <div id="terminal-rows" class="mb-4">
+              <div id="terminal-rows" class="mb-4" aria-live="polite" aria-atomic="false">
                 <!-- JS will inject rows here -->
               </div>
               <div class="terminal__row">
@@ -344,7 +369,7 @@
               <!-- Operation 1 -->
               <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                 </div>
                 <div>
                   <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Networking Fundamentals</h4>
@@ -355,7 +380,7 @@
               <!-- Operation 2 -->
               <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
-                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg>
+                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg>
                 </div>
                 <div>
                   <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Programming Concepts</h4>
@@ -366,7 +391,7 @@
               <!-- Operation 3 -->
               <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                 </div>
                 <div>
                   <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Offensive Foundations</h4>
@@ -377,7 +402,7 @@
           </div>
 
           <div class="reveal-right flex flex-col justify-center">
-            <div class="noise-overlay"></div>
+            <div class="noise-overlay" aria-hidden="true"></div>
             <!-- Systems Monitor Panel -->
             <div class="terminal monitor-panel">
                <div class="terminal__header">
@@ -519,11 +544,11 @@
             </div>
           </div>
 
-          <div class="contact__links reveal-right">
+          <div class="contact__links reveal-right" aria-label="Contact methods">
             <!-- Email -->
             <a href="mailto:sumitsharma9753108@gmail.com" class="contact-link">
               <div class="contact-link__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true" focusable="false">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
@@ -535,7 +560,7 @@
             <!-- GitHub -->
             <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="contact-link">
               <div class="contact-link__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true" focusable="false">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
               </div>
@@ -559,7 +584,7 @@
             <!-- Instagram -->
             <a href="https://instagram.com/sumit_sharma_o0" target="_blank" rel="noopener noreferrer" class="contact-link">
               <div class="contact-link__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true" focusable="false">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -585,8 +610,8 @@
       </div>
       
       <div class="flex gap-4 items-center">
-        <a href="#home" class="footer__copy footer__link">Back to top &uarr;</a>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" aria-hidden="true">
+        <a href="#home" class="footer__copy footer__link" aria-label="Back to top of page">Back to top &uarr;</a>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" aria-hidden="true" focusable="false">
           <rect x="0" y="0" width="10" height="10"/>
           <rect x="14" y="14" width="10" height="10"/>
         </svg>
