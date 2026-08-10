@@ -22,15 +22,21 @@ function initTheme() {
   const toggles = document.querySelectorAll('.theme-toggle');
   const stored = localStorage.getItem('theme');
   const defaultTheme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const themeLabel = theme => theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
 
   root.setAttribute('data-theme', defaultTheme);
 
   toggles.forEach(btn => {
+    btn.setAttribute('aria-pressed', String(defaultTheme === 'dark'));
+    btn.setAttribute('aria-label', themeLabel(defaultTheme));
+
     btn.addEventListener('click', () => {
       const currentTheme = root.getAttribute('data-theme');
       const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', nextTheme);
       localStorage.setItem('theme', nextTheme);
+      btn.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+      btn.setAttribute('aria-label', themeLabel(nextTheme));
     });
   });
 }
@@ -40,7 +46,10 @@ function initBackToTop() {
   if (!backBtn) return;
 
   function updateVisibility() {
-    backBtn.classList.toggle('visible', window.scrollY > 400);
+    const isVisible = window.scrollY > 400;
+    backBtn.classList.toggle('visible', isVisible);
+    backBtn.setAttribute('aria-hidden', String(!isVisible));
+    backBtn.setAttribute('tabindex', isVisible ? '0' : '-1');
   }
 
   window.addEventListener('scroll', updateVisibility, { passive: true });

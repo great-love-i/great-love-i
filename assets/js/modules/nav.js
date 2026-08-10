@@ -86,6 +86,7 @@ export function initNav() {
   function toggleMenu(open) {
     hamburger.classList.toggle('open', open);
     mobileMenu.classList.toggle('open', open);
+    mobileMenu.setAttribute('aria-hidden', String(!open));
     document.body.style.overflow = open ? 'hidden' : '';
     hamburger.setAttribute('aria-expanded', String(open));
 

@@ -86,7 +86,7 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
         </button>
-        <button id="hamburger" type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="hamburger" type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-haspopup="true" aria-controls="mobile-menu">
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
@@ -97,7 +97,7 @@
   </nav>
 
   <!-- Mobile Sidebar Menu -->
-  <div id="mobile-menu" class="nav__mobile-menu">
+  <div id="mobile-menu" class="nav__mobile-menu" aria-label="Mobile menu" aria-hidden="true">
     <a href="#about" class="nav__mobile-link">ABOUT</a>
     <a href="#education" class="nav__mobile-link">EDUCATION</a>
     <a href="#stack" class="nav__mobile-link">STACK</a>
@@ -123,7 +123,7 @@
 
   <main id="main-content" aria-label="Main content">
     <!-- Hero Section -->
-    <section id="home" class="hero container relative">
+    <section id="home" class="hero container relative" aria-labelledby="home-heading">
       <div class="hero__grid-lines" aria-hidden="true"></div>
       <div class="hero__background-text" aria-hidden="true">CYBERSECURITY</div>
       
@@ -153,7 +153,7 @@
               <span class="label">Cybersecurity Student // Nepal</span>
             </div>
             
-            <h1 class="hero__name glitch-hover">
+            <h1 id="home-heading" class="hero__name glitch-hover">
               <span class="first text-accent swiss-cross">SUMIT</span>
               <span class="last">SHARMA</span>
             </h1>
@@ -174,13 +174,13 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-labelledby="about-heading">
       <div class="container section-pad">
         <div class="about__layout">
           
           <div class="about__image-col reveal-left">
             <span class="section-number">01</span>
-            <h2 class="section-title">SYSTEM<br><span class="text-accent text-light">IDENTITY</span></h2>
+            <h2 id="about-heading" class="section-title">SYSTEM<br><span class="text-accent text-light">IDENTITY</span></h2>
             
             <p class="text-md mt-6">
               Currently exploring the depths of cybersecurity through a blend of rigorous academic study and independent offensive research. I am dedicated to understanding how complex systems fail—and how to make them resilient.
@@ -232,11 +232,11 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="education" aria-labelledby="education-heading">
       <div class="container section-pad">
         <div class="reveal">
           <span class="section-number">02</span>
-          <h2 class="section-title">ACADEMIC<br><span class="text-accent text-light">BACKGROUND</span></h2>
+          <h2 id="education-heading" class="section-title">ACADEMIC<br><span class="text-accent text-light">BACKGROUND</span></h2>
         </div>
         
         <div class="mt-12 grid education-grid">
@@ -257,12 +257,12 @@
     </section>
 
     <!-- Tech Stack Section -->
-    <section id="stack" class="stack">
+    <section id="stack" class="stack" aria-labelledby="stack-heading">
       <div class="container section-pad">
         <div class="stack__header reveal">
           <div>
             <span class="section-number">03</span>
-            <h2 class="section-title">CORE<br>STACK</h2>
+            <h2 id="stack-heading" class="section-title">CORE<br>STACK</h2>
           </div>
           <p class="text-md text-muted stack__summary">
             Languages, tools, and environments I use daily to build and secure systems.
@@ -353,13 +353,13 @@
     </section>
 
     <!-- Active Operations Section -->
-    <section id="operations" class="learning">
+    <section id="operations" class="learning" aria-labelledby="operations-heading">
       <div class="container section-pad">
         <div class="learning__layout">
           
           <div class="reveal-left">
             <span class="section-number">04</span>
-            <h2 class="section-title">ACTIVE<br><span class="text-accent text-light">OPERATIONS</span></h2>
+            <h2 id="operations-heading" class="section-title">ACTIVE<br><span class="text-accent text-light">OPERATIONS</span></h2>
             
             <p class="text-md mt-6 text-muted">
               My current academic and independent learning directives. I am prioritizing structural mastery of systems before advancing to complex penetration testing workflows.
@@ -445,10 +445,10 @@
     </section>
 
     <!-- Cybersecurity Foundations Matrix -->
-    <section id="matrix" class="cybersec">
+    <section id="matrix" class="cybersec" aria-labelledby="matrix-heading">
       <div class="container section-pad reveal">
         <span class="section-number">05</span>
-        <h2 class="section-title">CYBERSECURITY<br><span class="text-accent text-light">MATRIX</span></h2>
+        <h2 id="matrix-heading" class="section-title">CYBERSECURITY<br><span class="text-accent text-light">MATRIX</span></h2>
         
         <div class="table-scroll">
           <table class="swiss-table mt-12">
@@ -482,12 +482,12 @@
     </section>
 
     <!-- Selected Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
       <div class="container section-pad">
         <div class="flex justify-between items-end mb-8 reveal">
           <div>
             <span class="section-number">06</span>
-            <h2 class="section-title">SELECTED<br>WORK</h2>
+            <h2 id="projects-heading" class="section-title">SELECTED<br>WORK</h2>
           </div>
           <a href="https://github.com/great-love-i" target="_blank" rel="noopener noreferrer" class="btn btn-outline hide-mobile">
             View GitHub
@@ -528,13 +528,13 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
       <div class="container section-pad">
         <div class="contact__layout">
           
           <div class="contact__text reveal-left">
             <span class="section-number">07</span>
-            <h2 class="section-title">INITIATE<br><span class="text-accent text-light">CONNECTION</span></h2>
+            <h2 id="contact-heading" class="section-title">INITIATE<br><span class="text-accent text-light">CONNECTION</span></h2>
             
             <div class="mt-8 max-w-sm">
               <p class="contact__tagline">Open to collaborations, CTF teams, and open-source assignments.</p>
@@ -601,7 +601,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer container">
+  <footer class="footer container" role="contentinfo" aria-label="Site footer">
     <div class="footer__inner">
       <div class="nav__logo text-xl">SUMIT<span>_</span></div>
       
@@ -620,7 +620,7 @@
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top">
+  <button id="back-to-top" type="button" class="back-to-top" aria-label="Back to top" aria-hidden="true" tabindex="-1">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
