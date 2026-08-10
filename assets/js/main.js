@@ -1,8 +1,8 @@
 /* Main JS Entry */
 
-import { initNav }        from './nav.js';
-import { initAnimations } from './animations.js';
-import { initTerminal }   from './terminal.js';
+import { initNav }        from './modules/nav.js';
+import { initAnimations } from './modules/animations.js';
+import { initTerminal }   from './modules/terminal.js';
 
 function initPageUI() {
   initYear();

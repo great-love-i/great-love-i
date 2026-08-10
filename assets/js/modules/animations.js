@@ -2,7 +2,6 @@
 
 export function initAnimations() {
   initReveal();
-  initSkillBars();
   initCountUp();
   initGridParallax();
 }
@@ -43,26 +42,6 @@ function initReveal() {
   );
 
   revealEls.forEach(el => observer.observe(el));
-}
-
-/* Skill Bar Fill Animation */
-function initSkillBars() {
-  const bars = document.querySelectorAll('.skill-bar__fill');
-  if (!bars.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  bars.forEach(bar => observer.observe(bar));
 }
 
 /* Numerical Count-Up Animation */

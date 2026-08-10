@@ -81,8 +81,8 @@
     <a href="#projects" class="nav__mobile-link">PROJECTS</a>
     <a href="#contact" class="nav__mobile-link">CONTACT</a>
     
-    <button class="theme-toggle mt-8" aria-label="Toggle dark mode" style="width: 48px; height: 48px;">
-      <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+    <button class="theme-toggle theme-toggle--mobile mt-8" aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="5"/>
         <line x1="12" y1="1" x2="12" y2="3"/>
         <line x1="12" y1="21" x2="12" y2="23"/>
@@ -144,16 +144,14 @@
           </div>
 
           <div class="hero__visual" aria-hidden="true">
-            <div style="border: var(--border-thick); width: 100%; aspect-ratio: 1; position: relative; background: var(--color-bg); overflow: hidden; box-shadow: var(--shadow-lg);">
-              
+            <div class="hero__visual-box">
               <!-- Subtle inner borders for Swiss technical feel -->
-              <div style="position: absolute; top:8px; left:8px; right:8px; bottom:8px; border: 1px solid var(--color-border); opacity: 0.2; pointer-events: none; z-index: 10;"></div>
-              
+              <div class="hero__visual-overlay"></div>
               <!-- Swiss corner decorators -->
-              <div style="position: absolute; top:0; left:0; width:16px; height:16px; border-right: 2px solid var(--color-accent); border-bottom: 2px solid var(--color-accent); z-index: 10;"></div>
-              <div style="position: absolute; bottom:0; right:0; width:16px; height:16px; border-left: 2px solid var(--color-accent); border-top: 2px solid var(--color-accent); z-index: 10;"></div>
+              <div class="hero__visual-corner hero__visual-corner--tl"></div>
+              <div class="hero__visual-corner hero__visual-corner--br"></div>
 
-              <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+              <svg viewBox="0 0 400 400" width="100%" height="100%">
                 <defs>
                   <!-- Rotating Scanner Animation -->
 
@@ -183,25 +181,25 @@
                 <!-- Nodes -->
                 <g transform="translate(200, 200)">
                   <!-- Python NODE -->
-                  <g transform="translate(-110, -90)" class="radar-node" style="animation-delay: 0.2s;">
+                  <g transform="translate(-110, -90)" class="radar-node radar-node--pyenv">
                     <circle r="4" fill="var(--color-accent)"/>
                     <text x="10" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9" font-weight="bold">PY_ENV</text>
                   </g>
                   
                   <!-- C++ NODE -->
-                  <g transform="translate(130, -50)" class="radar-node" style="animation-delay: 0.8s;">
+                  <g transform="translate(130, -50)" class="radar-node radar-node--cpp">
                     <polygon points="0,-6 6,6 -6,6" fill="var(--color-fg)"/>
                     <text x="-60" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9">CPP_CORE</text>
                   </g>
                   
                   <!-- Linux NODE -->
-                  <g transform="translate(-70, 120)" class="radar-node" style="animation-delay: 1.5s;">
+                  <g transform="translate(-70, 120)" class="radar-node radar-node--linux">
                     <rect x="-4" y="-4" width="8" height="8" fill="var(--color-fg)"/>
                     <text x="10" y="4" fill="var(--color-fg)" font-family="monospace" font-size="9">LNX_SYS</text>
                   </g>
                   
                   <!-- Git NODE -->
-                  <g transform="translate(100, 100)" class="radar-node" style="animation-delay: 2.1s;">
+                  <g transform="translate(100, 100)" class="radar-node radar-node--git">
                     <circle r="4" fill="var(--color-accent)"/>
                     <text x="-55" y="4" fill="var(--color-accent)" font-family="monospace" font-size="9">GIT_VER</text>
                   </g>
@@ -272,7 +270,7 @@
               </div>
               <div class="terminal__row">
                 <span class="terminal__key">sumit@kali:~$</span>
-                <span class="terminal__val"><span id="terminal-cursor" class="terminal__cursor" style="display:none;"></span></span>
+                <span class="terminal__val"><span id="terminal-cursor" class="terminal__cursor"></span></span>
               </div>
             </div>
             
@@ -295,17 +293,17 @@
           <h2 class="section-title">ACADEMIC<br><span class="text-accent text-light">BACKGROUND</span></h2>
         </div>
         
-        <div class="mt-12 grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: var(--space-6);">
-          <div class="card card-surface reveal delay-1" style="display: flex; flex-direction: column; justify-content: center;">
-            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Institution</div>
+        <div class="mt-12 grid education-grid">
+          <div class="card card-surface reveal delay-1 education-card">
+            <div class="text-xs font-bold uppercase text-muted mb-2 education-card__label">Institution</div>
             <div class="text-lg font-bold">Lincoln International College</div>
           </div>
-          <div class="card card-surface reveal delay-2" style="display: flex; flex-direction: column; justify-content: center;">
-            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Program</div>
+          <div class="card card-surface reveal delay-2 education-card">
+            <div class="text-xs font-bold uppercase text-muted mb-2 education-card__label">Program</div>
             <div class="text-lg font-bold">BSc. (Hons) Cyber Security & Networking Technology</div>
           </div>
-          <div class="card card-surface reveal delay-3" style="display: flex; flex-direction: column; justify-content: center; border-left: 4px solid var(--color-accent);">
-            <div class="text-xs font-bold uppercase text-muted mb-2" style="letter-spacing: 0.12em;">Career Goal</div>
+          <div class="card card-surface reveal delay-3 education-card education-card--highlight">
+            <div class="text-xs font-bold uppercase text-muted mb-2 education-card__label">Career Goal</div>
             <div class="text-lg font-bold text-accent">Cybersecurity Professional</div>
           </div>
         </div>
@@ -320,7 +318,7 @@
             <span class="section-number">03</span>
             <h2 class="section-title">CORE<br>STACK</h2>
           </div>
-          <p class="text-md text-muted" style="max-width: 400px;">
+          <p class="text-md text-muted stack__summary">
             Languages, tools, and environments I use daily to build and secure systems.
           </p>
         </div>
@@ -423,35 +421,35 @@
 
             <div class="mt-8 flex flex-col gap-4">
               <!-- Operation 1 -->
-              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+              <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Networking Fundamentals</h4>
-                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Analyzing networking technology architectures and implementing rigorous security protocols.</p>
+                  <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Networking Fundamentals</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed terminal__row-muted">Analyzing networking technology architectures and implementing rigorous security protocols.</p>
                 </div>
               </div>
 
               <!-- Operation 2 -->
-              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+              <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Programming Concepts</h4>
-                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Fulfilling course requirements by mastering Python, C++, and low-level Assembly (NASM).</p>
+                  <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Programming Concepts</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed terminal__row-muted">Fulfilling course requirements by mastering Python, C++, and low-level Assembly (NASM).</p>
                 </div>
               </div>
 
               <!-- Operation 3 -->
-              <div class="card card-surface" style="padding: var(--space-5); display: flex; align-items: flex-start; gap: var(--space-4);">
+              <div class="card card-surface operation-card">
                 <div class="text-accent mt-1">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                 </div>
                 <div>
-                  <h4 class="font-bold text-sm uppercase mb-1" style="letter-spacing: 0.1em;">Offensive Foundations</h4>
-                  <p class="text-sm text-muted font-mono leading-relaxed" style="opacity: 0.8;">Engaging with entry-level CTFs to understand vulnerability exploitation workflows.</p>
+                  <h4 class="font-bold text-sm uppercase mb-1 project-vault__title">Offensive Foundations</h4>
+                  <p class="text-sm text-muted font-mono leading-relaxed terminal__row-muted">Engaging with entry-level CTFs to understand vulnerability exploitation workflows.</p>
                 </div>
               </div>
             </div>
@@ -460,37 +458,37 @@
           <div class="reveal-right flex flex-col justify-center">
             <div class="noise-overlay"></div>
             <!-- Systems Monitor Panel -->
-            <div class="terminal" style="border: var(--border-thick); padding: var(--space-6); background: var(--color-surface); color: var(--color-fg); margin-top: var(--space-8);">
-               <div class="flex justify-between items-center mb-6" style="border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-3); opacity: 0.8;">
-                 <span class="font-mono text-xs uppercase text-muted" style="letter-spacing: 0.1em;">SYS_MONITOR_v1.0</span>
-                 <span class="font-mono text-xs uppercase text-accent flex items-center gap-2" style="letter-spacing: 0.1em;">
-                   <span class="terminal__dot" style="background: var(--color-accent); opacity: 1;"></span> ONLINE
+            <div class="terminal monitor-panel">
+               <div class="terminal__header">
+                 <span class="terminal__title">SYS_MONITOR_v1.0</span>
+                 <span class="font-mono text-xs uppercase text-accent flex items-center gap-2 terminal__status">
+                   <span class="terminal__dot"></span> ONLINE
                  </span>
                </div>
                
-               <div class="font-mono text-xs" style="line-height: 2.2;">
+               <div class="font-mono text-xs terminal__body">
                  <div class="flex justify-between"><span>> init network_fundamentals</span> <span class="text-accent">[ACTIVE]</span></div>
                  <div class="flex justify-between"><span>> compile python_cpp_nasm</span> <span class="text-accent">[ACTIVE]</span></div>
                  <div class="flex justify-between"><span>> boot_linux_env kali</span> <span class="text-accent">[ACTIVE]</span></div>
-                 <div class="flex justify-between text-muted" style="opacity: 0.5;"><span>> deploy_ctf_toolkit</span> <span>[PENDING]</span></div>
-                 <div class="flex justify-between text-muted" style="opacity: 0.5;"><span>> run_web_exploitation</span> <span>[QUEUED]</span></div>
+                 <div class="flex justify-between text-muted terminal__row-muted"><span>> deploy_ctf_toolkit</span> <span>[PENDING]</span></div>
+                 <div class="flex justify-between text-muted terminal__row-muted"><span>> run_web_exploitation</span> <span>[QUEUED]</span></div>
                </div>
 
                <!-- Graphical Indicator -->
-               <div class="monitor-bars mt-6 flex items-end gap-1" style="height: 60px; border: 1px solid var(--color-border); padding: 4px; overflow: hidden;">
-                 <div class="monitor-bar" style="flex: 1; --height: 30%; --delay: 0.1s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 50%; --delay: 0.3s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 80%; --delay: 0.5s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 40%; --delay: 0.2s;"></div>
-                 <div class="monitor-bar accent" style="flex: 1; --height: 100%; --delay: 0.7s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 60%; --delay: 0.4s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 90%; --delay: 0.6s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 20%; --delay: 0.1s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 75%; --delay: 0.3s;"></div>
-                 <div class="monitor-bar" style="flex: 1; --height: 45%; --delay: 0.5s;"></div>
+               <div class="monitor-bars mt-6 flex items-end gap-1">
+                 <div class="monitor-bar" style="--height: 30%; --delay: 0.1s;"></div>
+                 <div class="monitor-bar" style="--height: 50%; --delay: 0.3s;"></div>
+                 <div class="monitor-bar" style="--height: 80%; --delay: 0.5s;"></div>
+                 <div class="monitor-bar" style="--height: 40%; --delay: 0.2s;"></div>
+                 <div class="monitor-bar accent" style="--height: 100%; --delay: 0.7s;"></div>
+                 <div class="monitor-bar" style="--height: 60%; --delay: 0.4s;"></div>
+                 <div class="monitor-bar" style="--height: 90%; --delay: 0.6s;"></div>
+                 <div class="monitor-bar" style="--height: 20%; --delay: 0.1s;"></div>
+                 <div class="monitor-bar" style="--height: 75%; --delay: 0.3s;"></div>
+                 <div class="monitor-bar" style="--height: 45%; --delay: 0.5s;"></div>
                </div>
                
-               <div class="font-mono text-xs text-muted mt-4" style="line-height: 1.5; opacity: 0.6;">
+               <div class="font-mono text-xs text-muted mt-4 terminal__body terminal__row-muted">
                  > Tracking progression metrics...
                </div>
             </div>
@@ -506,7 +504,7 @@
         <span class="section-number">05</span>
         <h2 class="section-title">CYBERSECURITY<br><span class="text-accent text-light">MATRIX</span></h2>
         
-        <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%;">
+        <div class="table-scroll">
           <table class="swiss-table mt-12">
             <thead>
               <tr>
@@ -550,26 +548,26 @@
           </a>
         </div>
 
-        <div class="project-vault reveal delay-1" style="border: var(--border-thick); padding: var(--space-8); background: var(--color-surface); position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 320px; text-align: center;">
+        <div class="project-vault reveal delay-1">
           <!-- decorative background -->
-          <div aria-hidden="true" style="position: absolute; top:0; left:0; right:0; bottom:0; opacity: 0.05; background-image: radial-gradient(var(--color-fg) 1px, transparent 1px); background-size: 24px 24px;"></div>
+          <div aria-hidden="true" class="project-vault__background"></div>
           
-          <div style="z-index: 1; display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
-            <div style="padding: 1.25rem; border: var(--border-thin); background: var(--color-bg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+          <div class="project-vault__content">
+            <div class="project-vault__panel">
               <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="square">
                 <rect x="3" y="11" width="18" height="11" rx="0" ry="0"></rect>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-2" style="letter-spacing: 0.1em; text-transform: uppercase;">Repository <span class="text-accent">Locked</span></h3>
-            <p class="text-sm font-mono text-muted max-w-lg mt-2" style="line-height: 1.6;">
+            <h3 class="text-2xl font-bold mb-2 project-vault__title">Repository <span class="text-accent">Locked</span></h3>
+            <p class="text-sm font-mono text-muted max-w-lg mt-2 project-vault__text">
               > Unauthorized access.<br>
               > Currently establishing foundational architectures in Semester 1.<br>
               > Advanced offensive and defensive project deployments are scheduled for Phase 02.
             </p>
             <div class="mt-8 flex gap-3 flex-wrap justify-center">
-               <span class="tag tag-outline" style="font-family: var(--font-mono);">SYSTEM: INITIATING</span>
-               <span class="tag tag-outline" style="font-family: var(--font-mono);">ENCRYPTION: ACTIVE</span>
+               <span class="tag tag-outline tag--mono">SYSTEM: INITIATING</span>
+               <span class="tag tag-outline tag--mono">ENCRYPTION: ACTIVE</span>
             </div>
           </div>
         </div>
@@ -610,7 +608,7 @@
                 </svg>
               </div>
               <span class="contact-link__label">Email</span>
-              <span class="contact-link__value" style="max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">sumitsharma9753108@gmail.com</span>
+              <span class="contact-link__value">sumitsharma9753108@gmail.com</span>
             </a>
             
             <!-- GitHub -->
@@ -666,7 +664,7 @@
       </div>
       
       <div class="flex gap-4 items-center">
-        <a href="#home" class="footer__copy" style="text-decoration:none;">Back to top &uarr;</a>
+        <a href="#home" class="footer__copy footer__link">Back to top &uarr;</a>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" aria-hidden="true">
           <rect x="0" y="0" width="10" height="10"/>
           <rect x="14" y="14" width="10" height="10"/>

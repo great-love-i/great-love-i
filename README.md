@@ -7,9 +7,9 @@ A static personal website built with HTML, CSS, and vanilla JavaScript. This rep
 - `index.html` — main portfolio page
 - `assets/css/style.css` — combined stylesheet for layout, typography, and responsive design
 - `assets/js/main.js` — app entry point and page-level behavior
-- `assets/js/nav.js` — sticky navigation, mobile menu, and section highlighting
-- `assets/js/animations.js` — scroll reveal, skill bars, and animated effects
-- `assets/js/terminal.js` — terminal-style profile text animation
+- `assets/js/modules/nav.js` — sticky navigation, mobile menu, and section highlighting
+- `assets/js/modules/animations.js` — scroll reveal and animated effects
+- `assets/js/modules/terminal.js` — terminal-style profile text animation
 
 ## Features
 

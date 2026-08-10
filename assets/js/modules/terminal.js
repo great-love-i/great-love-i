@@ -69,7 +69,7 @@ export function initTerminal() {
 
   function typeNextRow() {
     if (rowIndex >= ABOUT_DATA.length) {
-      if (cursor) cursor.style.display = 'inline-block';
+      if (cursor) cursor.classList.add('visible');
       return;
     }
 
