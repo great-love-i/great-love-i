@@ -1,48 +1,101 @@
-# Sumit Sharma Portfolio
+<div align="center">
 
-A static personal website built with HTML, CSS, and vanilla JavaScript. This repository contains the portfolio for Sumit Sharma, a Cybersecurity & Networking student.
+# Sumit Sharma — Portfolio
 
-## Repository structure
+**Cybersecurity & Networking Student · Lincoln International College, Kathmandu**
 
-- `index.html` — main portfolio page
-- `assets/css/style.css` — combined stylesheet for layout, typography, and responsive design
-- `assets/js/main.js` — app entry point and page-level behavior
-- `assets/js/modules/nav.js` — sticky navigation, mobile menu, and section highlighting
-- `assets/js/modules/animations.js` — scroll reveal and animated effects
-- `assets/js/modules/terminal.js` — terminal-style profile text animation
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Accessibility](https://img.shields.io/badge/A11y-WCAG%20Mindful-0A7EA4?style=flat-square&logo=accessible-icon&logoColor=white)](https://www.w3.org/WAI/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square&logo=open-source-initiative&logoColor=white)](LICENSE)
 
-## Features
+</div>
 
-- responsive layout with mobile navigation
-- dark mode toggle with local storage persistence
-- scroll-triggered reveal and animated skill bars
-- terminal-style profile animation for a cyber-themed presentation
-- basic accessibility improvements
+---
 
-## Local preview
+## Overview
 
-This is a static site and does not require a build step.
+A fast, dependency-free personal portfolio built with semantic HTML, modern CSS, and vanilla JavaScript. The site presents academic background, technical stack, active learning operations, and contact channels with a cyber-themed visual identity — while maintaining strong accessibility and SEO fundamentals.
 
-### Option 1: open directly
-Open `index.html` in your browser.
+## Highlights
 
-### Option 2: local server
-From the repository root:
+| Area | Details |
+|---|---|
+| **Responsive Design** | Fluid layout with mobile-first breakpoints and a full-screen mobile menu |
+| **Theming** | Light/dark mode toggle persisted via `localStorage`, driven by CSS custom properties |
+| **Animations** | Scroll-triggered reveals, terminal typing effect, and system-monitor visuals |
+| **Accessibility** | Skip link, ARIA landmarks, live regions, focus trapping, and reduced-motion support |
+| **SEO / AEO** | Open Graph, Twitter Cards, JSON-LD structured data, and semantic headings |
+| **Performance** | Zero build step, no frameworks, minimal render-blocking resources |
 
-```bash
-python3 -m http.server 8000
+## Repository Structure
+
+```
+├── index.html                  # Main portfolio page
+├── README.md                   # Project documentation
+└── assets/
+    ├── css/
+    │   └── style.css           # Combined stylesheet (tokens, layout, components)
+    └── js/
+        ├── main.js             # Entry point — theme, back-to-top, year
+        └── modules/
+            ├── nav.js          # Sticky nav, mobile menu, section highlighting
+            ├── animations.js   # Scroll reveals and animated effects
+            └── terminal.js     # Terminal-style profile animation
 ```
 
-Then open `http://localhost:8000` in your browser.
+## Getting Started
 
-## Notes
+No build tooling is required — this is a fully static site.
 
-- The current `README.md` is repository-focused and intended to document this website source.
-- The portfolio uses inline SVG icons and CSS custom properties for theme control.
-- The project is ready for future content updates and additional project showcase items.
+### Option 1 — Open directly
+
+Open `index.html` in any modern browser.
+
+### Option 2 — Local server (recommended)
+
+```bash
+npx serve .
+```
+
+Then visit [http://localhost:3000](http://localhost:3000).
+
+## Accessibility
+
+The site follows WCAG-minded practices:
+
+- Semantic landmarks (`nav`, `main`, `section`, `footer`) with labelled headings
+- Skip-to-content link for keyboard users
+- ARIA live regions for dynamic content (terminal output, menu state)
+- Focus trapping and `Escape` handling in the mobile menu
+- `prefers-reduced-motion` media query disables non-essential animation
+- Decorative elements hidden from assistive technology via `aria-hidden`
+
+## SEO & Structured Data
+
+- Canonical link, robots meta, and descriptive `title`/`description`
+- Open Graph and Twitter Card metadata for rich social previews
+- JSON-LD `Person` schema with `sameAs` profile links
+
+## Roadmap
+
+- [ ] Add project showcase cards with live demos
+- [ ] Generate Open Graph preview image
+- [ ] Add `sitemap.xml` and `robots.txt`
+- [ ] Integrate a contact form with validation
 
 ## Contact
 
-- Email: `sumitsharma9753108@gmail.com`
-- GitHub: https://github.com/great-love-i
-- LinkedIn: https://linkedin.com/in/sumit-sharma
+| Channel | Link |
+|---|---|
+| Email | [sumitsharma9753108@gmail.com](mailto:sumitsharma9753108@gmail.com) |
+| GitHub | [@great-love-i](https://github.com/great-love-i) |
+| LinkedIn | [sumit-sharma](https://linkedin.com/in/sumit-sharma) |
+| Instagram | [@sumit_sharma_o0](https://instagram.com/sumit_sharma_o0) |
+
+---
+
+<div align="center">
+<sub>Designed & built by Sumit Sharma</sub>
+</div>
