@@ -54,6 +54,7 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
+  <div id="a11y-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
   <!-- Global Atmosphere -->
   <div class="noise-overlay" aria-hidden="true"></div>
 
@@ -97,7 +98,7 @@
   </nav>
 
   <!-- Mobile Sidebar Menu -->
-  <div id="mobile-menu" class="nav__mobile-menu" aria-label="Mobile menu" aria-hidden="true">
+  <div id="mobile-menu" class="nav__mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu" aria-hidden="true">
     <a href="#about" class="nav__mobile-link">ABOUT</a>
     <a href="#education" class="nav__mobile-link">EDUCATION</a>
     <a href="#stack" class="nav__mobile-link">STACK</a>

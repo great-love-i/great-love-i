@@ -90,6 +90,11 @@ export function initNav() {
     document.body.style.overflow = open ? 'hidden' : '';
     hamburger.setAttribute('aria-expanded', String(open));
 
+    const liveRegion = document.getElementById('a11y-live');
+    if (liveRegion) {
+      liveRegion.textContent = open ? 'Mobile menu opened. Use tab to navigate and escape to close.' : 'Mobile menu closed.';
+    }
+
     if (open) {
       lastFocusedElement = document.activeElement;
       const focusable = getMenuFocusableElements();
