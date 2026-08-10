@@ -28,6 +28,7 @@
   <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <!-- Global Atmosphere -->
   <div class="noise-overlay"></div>
 
@@ -60,7 +61,7 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
         </button>
-        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
           <span class="hamburger__bar"></span>
@@ -95,7 +96,7 @@
     </button>
   </div>
 
-  <main>
+  <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero container relative">
       <div class="hero__grid-lines"></div>
@@ -133,9 +134,7 @@
             
             <div class="hero__meta">
               <p class="hero__tagline">
-              <p class="hero__tagline">
                 Cybersecurity & Networking student focused on designing secure architectures and mastering the intersection of <strong>low-level systems</strong> and <strong>network protocols</strong>.
-              </p>
               </p>
               <div class="hero__actions">
                 <a href="#about" class="btn btn-primary">Discover More</a>
@@ -683,35 +682,5 @@
     </svg>
   </button>
 
-  <script>
-    /* Year + Dark Mode + Back to Top */
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    /* Dark mode toggle — handles multiple buttons */
-    const root = document.documentElement;
-    const toggles = document.querySelectorAll('.theme-toggle');
-    const stored = localStorage.getItem('theme');
-    
-    if (stored === 'dark') root.setAttribute('data-theme', 'dark');
-    
-    toggles.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const isDark = root.getAttribute('data-theme') === 'dark';
-        const newTheme = isDark ? 'light' : 'dark';
-        root.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-      });
-    });
-
-    /* Back to top */
-    const backBtn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      if (backBtn) backBtn.classList.toggle('visible', window.scrollY > 400);
-    }, { passive: true });
-    
-    if (backBtn) {
-      backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-    }
-  </script>
 </body>
 </html>
