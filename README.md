@@ -34,9 +34,13 @@ A fast, dependency-free personal portfolio built with semantic HTML, modern CSS,
 ```
 ├── index.html                  # Main portfolio page
 ├── README.md                   # Project documentation
+├── LICENSE                     # MIT license
 ├── robots.txt                  # Crawler rules + sitemap reference
+├── humans.txt                  # Credits for the people behind the site
 ├── sitemap.xml                 # XML sitemap for search engines
 ├── site.webmanifest            # PWA manifest (name, theme, icons)
+├── .well-known/
+│   └── security.txt            # Security contact (RFC 9116)
 └── assets/
     ├── css/
     │   └── style.css           # Combined stylesheet (tokens, layout, components)

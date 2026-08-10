@@ -482,3 +482,84 @@ body::after { content: ""; position: fixed; top: 0; left: 0; width: 100%; height
 
 .radar-grid { stroke: var(--color-border); opacity: 0.15; }
 .radar-accent { stroke: var(--color-accent); opacity: 0.4; }
+
+/* ─── ROADMAP SECTION ──────────────────────────────────── */
+.roadmap__summary { max-width: 42ch; margin-top: var(--space-4); }
+
+.roadmap__timeline {
+  position: relative;
+  max-width: 720px;
+  padding-left: var(--space-8);
+}
+
+.roadmap__timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.roadmap__item {
+  position: relative;
+  padding-bottom: var(--space-10);
+}
+
+.roadmap__item:last-child { padding-bottom: 0; }
+
+.roadmap__marker {
+  position: absolute;
+  left: calc(-1 * var(--space-8));
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-bg);
+  border: var(--border-medium);
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+.roadmap__item--done .roadmap__marker {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.roadmap__item--active .roadmap__marker {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .roadmap__item--active .roadmap__marker {
+    animation: roadmap-pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes roadmap-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent); }
+  50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--color-accent) 8%, transparent); }
+}
+
+.roadmap__content {
+  background: var(--color-bg);
+  border: var(--border-thin);
+  padding: var(--space-5) var(--space-6);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.roadmap__item:hover .roadmap__content {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-md);
+}
+
+.roadmap__status { margin-bottom: var(--space-3); }
+
+.roadmap__phase {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-2);
+}
+
+.roadmap__item--active .roadmap__phase { color: var(--color-accent); }

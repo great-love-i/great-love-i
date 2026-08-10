@@ -1,0 +1,13 @@
+/* TEAM */
+Name: Sumit Sharma
+Role: Design & Development
+Location: Kathmandu, Nepal
+Contact: sumitsharma9753108@gmail.com
+GitHub: https://github.com/great-love-i
+
+/* SITE */
+Last update: 2026-08-10
+Language: English
+Standards: HTML5, CSS3, Vanilla JavaScript (ES Modules)
+Tools: VS Code, Git
+Fonts: Inter, IBM Plex Mono
